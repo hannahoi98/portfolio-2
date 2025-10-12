@@ -16,6 +16,11 @@ export default {
         display: ["Josefin Slab", "serif"],
         body: ["Josefin Sans", "system-ui", "sans-serif"],
       },
+      boxShadow: ({ theme }) => ({
+        hard: `4px 4px 0 0 ${theme("colors.elev")}`,
+        "hard-md": `6px 6px 0 0 ${theme("colors.elev")}`,
+        "hard-lg": `8px 8px 0 0 ${theme("colors.elev")}`,
+      }),
     },
   },
   plugins: [],
