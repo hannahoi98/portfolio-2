@@ -26,8 +26,8 @@ export const projects: Project[] = [
       alt: "wanderly feed mockup",
     },
     links: {
-      live: "",
-      repo: "",
+      live: "https://hannahoi98-css-frameworks-ca.netlify.app/",
+      repo: "https://github.com/hannahoi98/css-frameworks-CA",
     },
   },
 ];
