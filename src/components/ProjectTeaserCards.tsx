@@ -1,18 +1,16 @@
 type ProjectTeaserProps = {
   title: string;
-  description: string;
+  teaser: string;
   href: string;
-  imageSrc: string;
-  imageAlt: string;
+  image: { src: string; alt: string };
   className?: string;
 };
 
 export default function ProjectTeaserCard({
   title,
-  description,
+  teaser,
   href,
-  imageSrc,
-  imageAlt,
+  image,
   className = "",
 }: ProjectTeaserProps) {
   return (
@@ -30,11 +28,11 @@ export default function ProjectTeaserCard({
     >
       <article>
         <figure>
-          <img src={imageSrc} alt={imageAlt} className="h-full w-full object-contain" />
+          <img src={image.src} alt={image.alt} loading="lazy" />
           <figcaption className="sr-only">{title}</figcaption>
         </figure>
         <h3 className="mt-3 font-display text-2xl">{title}</h3>
-        <p className="text-ml clamp-2 mt-2">{description}</p>
+        <p className="text-ml clamp-2 mt-2">{teaser}</p>
       </article>
     </a>
   );
