@@ -15,3 +15,13 @@
     @apply border border-elev shadow-hard-md;
   }
 }
+
+@layer utilities {
+  .clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+}
