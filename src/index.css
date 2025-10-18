@@ -7,8 +7,16 @@
     @apply inline-flex items-center justify-center gap-2 border border-elev px-4 py-2 font-display text-xl shadow-hard transition-colors;
   }
 
+  .btn-pop {
+    @apply card-shadow transition-transform hover:-translate-y-0.5 hover:brightness-95;
+  }
+
   .btn-teal {
     @apply bg-teal text-elev hover:bg-teal-hover;
+  }
+
+  .btn-butter {
+    @apply bg-butter text-text-light hover:bg-butter-hover;
   }
 
   .card-shadow {
