@@ -28,11 +28,26 @@ export default function ProjectTeaserCard({
     >
       <article>
         <figure>
-          <img src={image.src} alt={image.alt} loading="lazy" />
+          <div className="aspect-[20/12] w-full overflow-hidden">
+            <img
+              src={image.src}
+              alt={image.alt}
+              loading="lazy"
+              className="object-fit block h-full w-full"
+            />
+          </div>
           <figcaption className="sr-only">{title}</figcaption>
         </figure>
+
         <h3 className="mt-3 font-display text-2xl">{title}</h3>
         <p className="text-ml clamp-2 mt-2">{teaser}</p>
+
+        <span
+          className={["btn btn-teal", "mt-4 inline-flex justify-center"].join(" ")}
+          aria-hidden="true"
+        >
+          More about the project
+        </span>
       </article>
     </a>
   );
