@@ -1,4 +1,11 @@
-import { ArrowArcLeftIcon, CodeIcon, RocketLaunchIcon } from "@phosphor-icons/react";
+import {
+  ArrowArcLeftIcon,
+  CodeIcon,
+  RocketLaunchIcon,
+  LinkSimpleIcon,
+  CheckCircleIcon,
+} from "@phosphor-icons/react";
+import { useState } from "react";
 
 type Image = { src: string; alt: string };
 type Links = { live?: string; repo?: string };
@@ -18,6 +25,18 @@ export default function ProjectLayout({
   links = {},
   backHref = "/",
 }: ProjectLayoutProps) {
+  const [copied, setCopied] = useState(false);
+
+  async function handleCopyLink() {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch {
+      window.prompt("Copy this link:", url);
+    }
+  }
   return (
     <article className="mx-auto max-w-3xl px-6 pb-10 pt-4 md:max-w-4xl md:px-8 md:pt-8 lg:max-w-5xl lg:px-10 lg:pt-10">
       <div className="mb-4 flex justify-end">
@@ -35,9 +54,18 @@ export default function ProjectLayout({
           <img src={image.src} alt={image.alt} />
         </div>
       </figure>
-      <h2 className="mt-6 border-b border-current pb-3 font-display text-3xl md:text-4xl">
-        {title}
-      </h2>
+      <div className="mt-6 flex items-center justify-between border-b border-current pb-3">
+        <h2 className="font-display text-3xl md:text-4xl">{title}</h2>
+        <button
+          type="button"
+          onClick={handleCopyLink}
+          className="-m-2 rounded bg-transparent p-2 text-current hover:text-teal focus:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-bg-light dark:hover:text-butter dark:focus-visible:ring-offset-bg-dark"
+          aria-label={copied ? "Link copied" : "Copy article link"}
+          title={copied ? "Copied!" : "Copy link"}
+        >
+          {copied ? <CheckCircleIcon size={24} /> : <LinkSimpleIcon size={24} />}
+        </button>
+      </div>
       <div className="mt-6">
         <p className="text-lg">{description}</p>
       </div>
