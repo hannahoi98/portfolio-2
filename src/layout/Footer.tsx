@@ -1,5 +1,11 @@
 import { GithubLogoIcon, LinkedinLogoIcon, EnvelopeIcon } from "@phosphor-icons/react";
 
+/**
+ * Footer with social/contact links.
+ * - Links: GitHub, LinkedIn, Email
+ * - Uses icons + accessible labels
+ * - Has a top border and responsive layout (column on mobile, row on large)
+ */
 export default function Footer() {
   return (
     <footer className="mt-8 px-6 py-6 md:py-8 lg:py-10">

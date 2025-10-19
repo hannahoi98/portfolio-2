@@ -1,7 +1,16 @@
+/* Tailwind base resets + primitives */
 @tailwind base;
+/* Tailwind base resets + primitives */
 @tailwind components;
+/* Utility classes (one-off helpers) */
 @tailwind utilities;
 
+/* ---- Reusable component classes (Tailwind @apply) ----
+   - .btn: base button look
+   - .btn-pop: adds the “pop” shadow + slight lift on hover
+   - .btn-teal / .btn-butter: color variants (swap per theme)
+   - .card-shadow: unified hard-shadow border look used across cards/images
+*/
 @layer components {
   .btn {
     @apply inline-flex items-center justify-center gap-2 border border-elev px-4 py-2 font-display text-xl shadow-hard transition-colors;
@@ -24,6 +33,9 @@
   }
 }
 
+/* ---- Small utilities ----
+   - .clamp-2: line-clamp text to 2 lines with ellipsis
+*/
 @layer utilities {
   .clamp-2 {
     display: -webkit-box;

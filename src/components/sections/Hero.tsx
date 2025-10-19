@@ -1,5 +1,15 @@
 import { Icon } from "@iconify/react";
 
+/**
+ * Hero
+ * Short intro about me + tech stack icons and a portrait.
+ *
+ * Notes:
+ * - Uses an <h2 id="hero-title"> and aria-labelledby on the section for a11y.
+ * - Left column = text; right column = portrait image.
+ * - The tech icons are decorative labels for quick scanning.
+ * - No props: this is a static section for the homepage.
+ */
 export default function Hero() {
   return (
     <section aria-labelledby="hero-title" className="mx-auto max-w-6xl px-6 md:px-8 lg:px-10">

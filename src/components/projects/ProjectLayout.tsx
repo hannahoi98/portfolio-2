@@ -7,9 +7,17 @@ import {
 } from "@phosphor-icons/react";
 import { useState } from "react";
 
+/** Image meta used by the layout. */
 type Image = { src: string; alt: string };
+/** Optional links shown as buttons under the article. */
 type Links = { live?: string; repo?: string };
 
+/**
+ * Props for the project article layout.
+ * - `title`, `description`, `image` come from your `projects` data
+ * - `links` (optional) shows "Live demo" / "GitHub repo" buttons when provided
+ * - `backHref` controls the small "Back" button link
+ */
 type ProjectLayoutProps = {
   title: string;
   description: string;
@@ -18,6 +26,11 @@ type ProjectLayoutProps = {
   backHref?: string;
 };
 
+/**
+ * ProjectLayout
+ * Renders a single project page: hero image, title with a copy-link action,
+ * description, and optional action buttons.
+ */
 export default function ProjectLayout({
   title,
   description,
@@ -27,6 +40,10 @@ export default function ProjectLayout({
 }: ProjectLayoutProps) {
   const [copied, setCopied] = useState(false);
 
+  /**
+   * Copies the current URL to the clipboard.
+   * Falls back to a prompt if clipboard access isn’t allowed.
+   */
   async function handleCopyLink() {
     const url = window.location.href;
     try {
@@ -37,6 +54,7 @@ export default function ProjectLayout({
       window.prompt("Copy this link:", url);
     }
   }
+
   return (
     <article className="mx-auto max-w-3xl px-6 pb-10 pt-4 md:max-w-4xl md:px-8 md:pt-8 lg:max-w-5xl lg:px-10 lg:pt-10">
       <div className="mb-4 flex justify-end">

@@ -1,7 +1,15 @@
-import Hero from "../Hero";
-import ProjectTeaserCard from "../ProjectTeaserCards";
+import Hero from "../sections/Hero";
+import ProjectTeaserCard from "../projects/ProjectTeaserCards";
 import { projects } from "../../data/projects";
 
+/**
+ * Home page.
+ * - Renders the opening Hero section.
+ * - Lists recent projects using `ProjectTeaserCard`, fed by `data/projects`.
+ * - Uses `aria-labelledby` so screen readers announce the “My Latest Projects” heading for the section.
+ *
+ * @returns {JSX.Element} The portfolio homepage.
+ */
 export default function Home() {
   return (
     <main className="max-w4xl mx-auto px-4 md:px-7 lg:px-7">

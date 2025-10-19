@@ -2,9 +2,11 @@ import { HandWavingIcon, MoonIcon, SunDimIcon } from "@phosphor-icons/react";
 import { useTheme } from "../theme/useTheme";
 
 /**
- * Header with a theme toggle.
- * - Shows a waving hand next to the greeting
- * - Theme button switches icon + color
+ * Header
+ * Top bar with a greeting and a theme toggle.
+ * - Shows a waving hand icon next to the title
+ * - Theme button swaps icon (moon/sun) + color (teal/butter)
+ * - Stacks on small screens, aligns horizontally on larger screens
  */
 export default function Header() {
   const { theme, toggleTheme } = useTheme();

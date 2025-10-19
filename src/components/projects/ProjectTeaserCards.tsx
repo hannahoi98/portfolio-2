@@ -1,3 +1,11 @@
+/**
+ * Public props for a teaser card shown on the homepage grid.
+ * - `title`   – Project name shown as the card heading
+ * - `teaser`  – Short 1–2 line description
+ * - `href`    – Where the whole card links to (article page)
+ * - `image`   – Thumbnail (src + alt)
+ * - `className` – Optional extra classes for layout tweaks
+ */
 type ProjectTeaserProps = {
   title: string;
   teaser: string;
@@ -6,6 +14,12 @@ type ProjectTeaserProps = {
   className?: string;
 };
 
+/**
+ * ProjectTeaserCard
+ * Clickable card used on the home page.
+ * The entire card is a link for easier tapping, includes a thumb,
+ * title, short teaser, and a non-focusable “More about the project” hint.
+ */
 export default function ProjectTeaserCard({
   title,
   teaser,

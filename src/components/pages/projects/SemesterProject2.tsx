@@ -1,6 +1,13 @@
 import ProjectLayout from "../../projects/ProjectLayout";
 import { projects } from "../../../data/projects";
 
+/**
+ * Project page for **Semester Project 2**.
+ * Pulls the project info by `id` ("semester-project2") and renders ProjectLayout.
+ * Returns `null` if the project entry cannot be found.
+ *
+ * @returns {JSX.Element | null} The Semester Project 2 page or `null` if not found.
+ */
 export default function SemesterProject2() {
   const project = projects.find((p) => p.id === "semester-project2");
   if (!project) return null;
