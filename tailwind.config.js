@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: { light: "#EFEFEF", dark: "#3C3C3C" },
+        bg: { light: "#E6E6E6", dark: "#3C3C3C" },
         text: { light: "#3C3C3C", dark: "#F8F8F8" },
         butter: { DEFAULT: "#F7F6D4", hover: "#EDECBF" },
         lavender: { DEFAULT: "#AFA8C8", hover: "#9F97BC" },
