@@ -31,22 +31,22 @@ export default function Hero() {
             <p className="font-semibold">Tech Stack:</p>
             <ul className="flex flex-wrap items-center gap-4">
               <li aria-label="React">
-                <Icon icon="logos:react" className="h-10 w-10" />
+                <Icon icon="logos:react" className="h-8 w-8" />
               </li>
               <li aria-label="TypeScript">
-                <Icon icon="logos:typescript-icon" className="h-10 w-10" />
+                <Icon icon="logos:typescript-icon" className="h-8 w-8" />
               </li>
               <li aria-label="JavaScript">
-                <Icon icon="logos:javascript" className="h-10 w-10" />
+                <Icon icon="logos:javascript" className="h-8 w-8" />
               </li>
               <li aria-label="HTML">
-                <Icon icon="logos:html-5" className="h-10 w-10" />
+                <Icon icon="logos:html-5" className="h-8 w-8" />
               </li>
               <li aria-label="CSS">
-                <Icon icon="logos:css-3" className="h-10 w-10" />
+                <Icon icon="logos:css-3" className="h-8 w-8" />
               </li>
               <li aria-label="Tailwind CSS">
-                <Icon icon="logos:tailwindcss-icon" className="h-10 w-10" />
+                <Icon icon="logos:tailwindcss-icon" className="h-8 w-8" />
               </li>
             </ul>
           </div>

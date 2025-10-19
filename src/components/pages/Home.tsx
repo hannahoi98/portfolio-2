@@ -7,7 +7,7 @@ export default function Home() {
     <main className="max-w4xl mx-auto px-4 md:px-7 lg:px-7">
       <Hero />
       <section aria-labelledby="projects-title" className="mt-20">
-        <div className="mb-4 border-b border-current">
+        <div className="mb-6 border-b border-current">
           <h2 id="projects-title" className="mb-6 font-display text-2xl md:text-3xl lg:text-4xl">
             My Latest Projects
           </h2>
