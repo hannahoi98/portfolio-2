@@ -12,7 +12,7 @@
   }
 
   .btn-teal {
-    @apply bg-teal text-elev hover:bg-teal-hover;
+    @apply bg-teal text-elev hover:bg-teal-hover dark:bg-lavender dark:text-bg-dark dark:hover:bg-lavender-hover;
   }
 
   .btn-butter {

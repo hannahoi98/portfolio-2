@@ -17,7 +17,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <h1 className="flex items-center gap-2 font-display text-2xl md:text-3xl lg:text-4xl">
               Hey! I'm Hanna
-              <HandWavingIcon className="h-11 w-11 text-teal" />
+              <HandWavingIcon className="h-11 w-11 text-teal dark:text-butter" />
             </h1>
             <button
               type="button"

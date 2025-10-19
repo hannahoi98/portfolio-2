@@ -41,7 +41,7 @@ export default function ProjectLayout({
         {links.live && (
           <a href={links.live} target="_blank" rel="noreferrer" className="btn btn-teal btn-pop">
             <RocketLaunchIcon size={18} />
-            Live demo
+            Live Demo
           </a>
         )}
         {links.repo && (
