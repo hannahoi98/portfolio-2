@@ -42,7 +42,7 @@ export const projects: Project[] = [
     },
     links: {
       live: "https://hannahoi98-js-frameworks.netlify.app",
-      repo: "https://github.com/NoroffFEU/jsfw-2025-v1-hanna-jsframeworks",
+      repo: "https://github.com/NoroffFEU/jsfw-2025-v1-hanna-jsframeworks/blob/main/README.md",
     },
   },
   {
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     },
     links: {
       live: "https://hannahoi98-semester-project2.netlify.app",
-      repo: "https://github.com/hannahoi98/semester_project2",
+      repo: "https://github.com/hannahoi98/semester_project2/blob/main/README.md",
     },
   },
   {
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     },
     links: {
       live: "https://hannahoi98-css-frameworks-ca.netlify.app",
-      repo: "https://github.com/hannahoi98/css-frameworks-CA",
+      repo: "https://github.com/hannahoi98/css-frameworks-CA/blob/main/README.md",
     },
   },
 ];
