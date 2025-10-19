@@ -19,9 +19,13 @@ export default function ProjectLayout({
   backHref = "/",
 }: ProjectLayoutProps) {
   return (
-    <article className="mx-auto max-w-3xl px-6 py-10 md:max-w-4xl md:px-8 lg:max-w-5xl lg:px-10">
+    <article className="mx-auto max-w-3xl px-6 pb-10 pt-4 md:max-w-4xl md:px-8 md:pt-8 lg:max-w-5xl lg:px-10 lg:pt-10">
       <div className="mb-4 flex justify-end">
-        <a href={backHref} className="btn btn-butter btn-pop" aria-label="Back home">
+        <a
+          href={backHref}
+          className="btn btn-butter btn-pop px-3 py-1.5 text-base md:px-4 md:py-2 md:text-xl"
+          aria-label="Back home"
+        >
           <ArrowArcLeftIcon size={18} />
           Back
         </a>
@@ -39,13 +43,23 @@ export default function ProjectLayout({
       </div>
       <div className="mt-8 flex flex-wrap gap-5">
         {links.live && (
-          <a href={links.live} target="_blank" rel="noreferrer" className="btn btn-teal btn-pop">
+          <a
+            href={links.live}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-teal btn-pop px-3 py-1.5 text-base md:px-4 md:py-2 md:text-xl"
+          >
             <RocketLaunchIcon size={18} />
             Live Demo
           </a>
         )}
         {links.repo && (
-          <a href={links.repo} target="_blank" rel="noreferrer" className="btn btn-teal btn-pop">
+          <a
+            href={links.repo}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-teal btn-pop px-3 py-1.5 text-base md:px-4 md:py-2 md:text-xl"
+          >
             <CodeIcon size={18} weight="bold" />
             GitHub Repo
           </a>
