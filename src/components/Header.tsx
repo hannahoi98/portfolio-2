@@ -1,6 +1,15 @@
-import { HandWavingIcon } from "@phosphor-icons/react";
+import { HandWavingIcon, MoonIcon, SunDimIcon } from "@phosphor-icons/react";
+import { useTheme } from "../theme/useTheme";
 
+/**
+ * Header with a theme toggle.
+ * - Shows a waving hand next to the greeting
+ * - Theme button switches icon + color
+ */
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
+  const isLight = theme === "light";
+
   return (
     <header className="px-6 py-6 md:py-8 lg:py-10">
       <div className="max-w4xl mx-auto px-4 md:px-7 lg:px-7">
@@ -10,8 +19,14 @@ export default function Header() {
               Hey! I'm Hanna
               <HandWavingIcon className="h-11 w-11 text-teal" />
             </h1>
-            <button type="button" className="btn btn-teal">
-              Dark Theme
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className={`btn ${isLight ? "btn-teal" : "btn-butter"}`}
+              aria-label={isLight ? "Activate dark theme" : "Activate light theme"}
+            >
+              {isLight ? <MoonIcon size={18} /> : <SunDimIcon size={18} />}
+              {isLight ? "Dark Theme" : "Light Theme"}
             </button>
           </div>
         </div>
