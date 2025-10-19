@@ -1,5 +1,6 @@
 # Hanna Høidahl — Front-End Portfolio 🙎🏽‍♀️
-<img width="517" height="688" alt="image" src="https://github.com/user-attachments/assets/3cb19d45-b0b4-4438-ae9b-4272ddefb9d5" />
+<img width="1456" height="540" alt="image" src="https://github.com/user-attachments/assets/6b5bc5ee-5ad1-4355-9fbc-85606129bcf7" />
+
 A portfolio built with React + Vite + TypeScript + Tailwind. Showcases three projects with reusable cards and article pages. This site focuses on clean UI, accessible patterns, and a simple content pipeline (project data in one place, UI reuses typed components).
 
 This is my personal portfolio site, showcasing selected coursework and projects. It isn’t intended as a multi-contributor project, but you’re welcome to explore the code and structure. 
@@ -32,8 +33,8 @@ Prerequisites:
   
 ### Installing
 1. Clone the repo
-- git clone https://github.com/hannahoi98/jsfw-2020-v1-hanna-jsframeworks.git
-- cd sjsfw-2020-v1-hanna-jsframeworks
+- git clone https://github.com/hannahoi98/portfolio-2.git
+- cd portfolio-2
   
 2. Install dependencies
 - npm install
